@@ -1,2 +1,1 @@
-# mydata_module
-Mydata module for Dolibarr
+### Mydata module for Dolibarr
