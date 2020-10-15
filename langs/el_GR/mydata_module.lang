@@ -1,1 +1,22 @@
- 
+# Mydata connection of dolibarr for Greece language file - el_GR - mydata_module
+# Copyright (C) 2020
+
+# Generic
+ModuleXXXXXName = Mydata
+ModuleXXXXXDesc = Mydata
+
+
+# Admin page
+Setup = Διαμόρφωση
+Settings = Ρυθμίσεις
+SetupPage = Σελίδα διαμόρφωσης Mydata
+
+
+# About page
+About = Πληροφορίες
+MydataAbout = Πληροφορίες module
+AboutPage = Πληροφορίες για το Mydata
+
+
+
+# Mydata
