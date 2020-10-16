@@ -85,7 +85,7 @@ print '<br>';
 
 print '<img src="'.dol_buildpath('/mydata_module/img/mydata_logo.png',1).'"/>';
 
-$buffer = file_get_contents(dol_buildpath('/mydata_module/README.md',0));
+$buffer = file_get_contents(dol_buildpath('/mydata_module/admin/README.md',0));
 print Markdown($buffer);
 
 print '<br>';
