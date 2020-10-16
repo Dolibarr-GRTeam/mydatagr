@@ -1,6 +1,6 @@
 <?php
 /* Copyright (C) 2004-2017 Laurent Destailleur  <eldy@users.sourceforge.net>
- * Copyright (C) ---Put here your own copyright and developer email---
+ * Copyright (C) 2020 	Nikos Drosis		  <ndrosis@sysaid.gr>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,9 +17,9 @@
  */
 
 /**
- * \file    htdocs/modulebuilder/template/admin/about.php
- * \ingroup mymodule
- * \brief   About page of module MyModule.
+ * \file    htdocs/mydata_module/admin/about.php
+ * \ingroup mydata_module
+ * \brief   About page of module mydata_module.
  */
 
 // Load Dolibarr environment
