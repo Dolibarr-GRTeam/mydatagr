@@ -78,7 +78,7 @@ $head = mymoduleAdminPrepareHead();
 dol_fiche_head($head, 'about', '', 0, 'mydata_module@mydata_module');
 
 dol_include_once('/mydata_module/core/modules/modmydata_module.class.php');
-$tmpmodule = new modMyModule($db);
+$tmpmodule = new modmydata_module($db);
 print $tmpmodule->getDescLong();
 
 // Page end
