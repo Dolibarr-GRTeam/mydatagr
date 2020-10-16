@@ -78,6 +78,22 @@ print load_fiche_titre($langs->trans($page_name), $linkback, 'setup');
 $head = mymoduleAdminPrepareHead();
 dol_fiche_head($head, 'about', '', 0, 'mydata_module@mydata_module');
 
+// About page goes here
+echo $langs->trans("AboutPage");
+
+print '<br>';
+
+print '<img src="'.dol_buildpath('/mydata_module/img/mydata_logo.png',1).'"/>';
+
+$buffer = file_get_contents(dol_buildpath('/mydata_module/README.md',0));
+print Markdown($buffer);
+
+print '<br>';
+
+print '<a href="'.dol_buildpath('/mydata_module/admin/COPYING',1).'">';
+print '<img src="'.dol_buildpath('/mydata_module/img/gplv3.png',1).'"/>';
+print '</a>';
+
 dol_include_once('/mydata_module/core/modules/modmydata_module.class.php');
 $tmpmodule = new modmydata_module($db);
 print $tmpmodule->getDescLong();
