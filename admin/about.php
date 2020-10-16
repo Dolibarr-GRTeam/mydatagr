@@ -40,6 +40,7 @@ if (! $res) die("Include of main fails");
 require_once DOL_DOCUMENT_ROOT.'/core/lib/admin.lib.php';
 require_once DOL_DOCUMENT_ROOT.'/core/lib/functions2.lib.php';
 require_once '../lib/mydata_module.lib.php';
+require '../lib/PHP_Markdown/markdown.php';
 
 // Translations
 $langs->loadLangs(array("errors","admin","mydata_module@mydata_module"));
