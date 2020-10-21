@@ -213,4 +213,28 @@ INSERT INTO llx_c_mydata_classificationcategory (code, description, active, inco
 INSERT INTO llx_c_mydata_classificationcategory (code, description, active, income) VALUES ('category2_14', 'Αποθέματα Λήξης Περιόδου', 1, 2);
 INSERT INTO llx_c_mydata_classificationcategory (code, description, active, income) VALUES ('category2_95', 'Λοιπά Πληροφοριακά Στοιχεία Εξόδων', 1, 2);
 
+-- Insert data mydata_vatexceptions
+INSERT INTO llx_c_mydata_vatexceptions (code, description, active) VALUES ('1', 'Χωρίς ΦΠΑ - άρθρο 3 του Κώδικα ΦΠΑ', 1);
+INSERT INTO llx_c_mydata_vatexceptions (code, description, active) VALUES ('2', 'Χωρίς ΦΠΑ - άρθρο 5 του Κώδικα ΦΠΑ', 1);
+INSERT INTO llx_c_mydata_vatexceptions (code, description, active) VALUES ('3', 'Χωρίς ΦΠΑ - άρθρο 13 του Κώδικα ΦΠΑ', 1);
+INSERT INTO llx_c_mydata_vatexceptions (code, description, active) VALUES ('4', 'Χωρίς ΦΠΑ - άρθρο 14 του Κώδικα ΦΠΑ', 1);
+INSERT INTO llx_c_mydata_vatexceptions (code, description, active) VALUES ('5', 'Χωρίς ΦΠΑ - άρθρο 16 του Κώδικα ΦΠΑ', 1);
+INSERT INTO llx_c_mydata_vatexceptions (code, description, active) VALUES ('6', 'Χωρίς ΦΠΑ - άρθρο 19 του Κώδικα ΦΠΑ', 1);
+INSERT INTO llx_c_mydata_vatexceptions (code, description, active) VALUES ('7', 'Χωρίς ΦΠΑ - άρθρο 22 του Κώδικα ΦΠΑ', 1);
+INSERT INTO llx_c_mydata_vatexceptions (code, description, active) VALUES ('8', 'Χωρίς ΦΠΑ - άρθρο 24 του Κώδικα ΦΠΑ', 1);
+INSERT INTO llx_c_mydata_vatexceptions (code, description, active) VALUES ('9', 'Χωρίς ΦΠΑ - άρθρο 25 του Κώδικα ΦΠΑ', 1);
+INSERT INTO llx_c_mydata_vatexceptions (code, description, active) VALUES ('10', 'Χωρίς ΦΠΑ - άρθρο 26 του Κώδικα ΦΠΑ', 1);
+INSERT INTO llx_c_mydata_vatexceptions (code, description, active) VALUES ('11', 'Χωρίς ΦΠΑ - άρθρο 27 του Κώδικα ΦΠΑ', 1);
+INSERT INTO llx_c_mydata_vatexceptions (code, description, active) VALUES ('12', 'Χωρίς ΦΠΑ - άρθρο 27 – Πλοία Ανοικτής Θαλάσσης του Κώδικα ΦΠΑ', 1);
+INSERT INTO llx_c_mydata_vatexceptions (code, description, active) VALUES ('13', 'Χωρίς ΦΠΑ - άρθρο 27.1.γ – Πλοία Ανοικτής Θαλάσσης του Κώδικα ΦΠΑ', 1);
+INSERT INTO llx_c_mydata_vatexceptions (code, description, active) VALUES ('14', 'Χωρίς ΦΠΑ - άρθρο 28 του Κώδικα ΦΠΑ', 1);
+INSERT INTO llx_c_mydata_vatexceptions (code, description, active) VALUES ('15', 'Χωρίς ΦΠΑ - άρθρο 39 του Κώδικα ΦΠΑ', 1);
+INSERT INTO llx_c_mydata_vatexceptions (code, description, active) VALUES ('16', 'Χωρίς ΦΠΑ - άρθρο 39α του Κώδικα ΦΠΑ', 1);
+INSERT INTO llx_c_mydata_vatexceptions (code, description, active) VALUES ('17', 'Χωρίς ΦΠΑ - άρθρο 40 του Κώδικα ΦΠΑ', 1);
+INSERT INTO llx_c_mydata_vatexceptions (code, description, active) VALUES ('18', 'Χωρίς ΦΠΑ - άρθρο 41 του Κώδικα ΦΠΑ', 1);
+INSERT INTO llx_c_mydata_vatexceptions (code, description, active) VALUES ('19', 'Χωρίς ΦΠΑ - άρθρο 47 του Κώδικα ΦΠΑ', 1);
+INSERT INTO llx_c_mydata_vatexceptions (code, description, active) VALUES ('20', 'ΦΠΑ εμπεριεχόμενος - άρθρο 43 του Κώδικα ΦΠΑ', 1);
+INSERT INTO llx_c_mydata_vatexceptions (code, description, active) VALUES ('21', 'ΦΠΑ εμπεριεχόμενος - άρθρο 44 του Κώδικα ΦΠΑ', 1);
+INSERT INTO llx_c_mydata_vatexceptions (code, description, active) VALUES ('22', 'ΦΠΑ εμπεριεχόμενος - άρθρο 45 του Κώδικα ΦΠΑ', 1);
+INSERT INTO llx_c_mydata_vatexceptions (code, description, active) VALUES ('23', 'ΦΠΑ εμπεριεχόμενος - άρθρο 46 του Κώδικα ΦΠΑ', 1);
 
