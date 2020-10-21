@@ -1,6 +1,7 @@
 -- ========================================================================
 -- Copyright (C) 2020 George Kourtis 
 -- Copyright (C) 2020 Nikos Drosis <ndrosis@sysaid.gr>
+-- Copyright (C) 2020 Dimitris Kalivis <dkalivis@technoex.gr>
 --
 -- This program is free software; you can redistribute it and/or modify
 -- it under the terms of the GNU General Public License as published by
