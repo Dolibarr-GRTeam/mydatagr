@@ -239,3 +239,20 @@ INSERT INTO llx_c_mydata_vatexceptions (code, description, active) VALUES ('21',
 INSERT INTO llx_c_mydata_vatexceptions (code, description, active) VALUES ('22', 'ΦΠΑ εμπεριεχόμενος - άρθρο 45 του Κώδικα ΦΠΑ', 1);
 INSERT INTO llx_c_mydata_vatexceptions (code, description, active) VALUES ('23', 'ΦΠΑ εμπεριεχόμενος - άρθρο 46 του Κώδικα ΦΠΑ', 1);
 
+-- Insert data mydata_withholdingtaxes
+INSERT INTO llx_c_mydata_vatexceptions (code, description, tax, tax_type, active) VALUES ('1', 'Περιπτ. β’- Τόκοι - 15%', 15, 1, 1);
+INSERT INTO llx_c_mydata_vatexceptions (code, description, tax, tax_type, active) VALUES ('2', 'Περιπτ. γ’ - Δικαιώματα - 20%', 20, 1, 1);
+INSERT INTO llx_c_mydata_vatexceptions (code, description, tax, tax_type, active) VALUES ('3', 'Περιπτ. δ’ - Αμοιβές Συμβουλών Διοίκησης - 20%', 20, 1, 1);
+INSERT INTO llx_c_mydata_vatexceptions (code, description, tax, tax_type, active) VALUES ('4', 'Περιπτ. δ’ - Τεχνικά Έργα - 3%', 3, 1, 1);
+INSERT INTO llx_c_mydata_vatexceptions (code, description, tax, tax_type, active) VALUES ('5', 'Υγρά καύσιμα και προϊόντα καπνοβιομηχανίας 1%', 1, 1, 1);
+INSERT INTO llx_c_mydata_vatexceptions (code, description, tax, tax_type, active) VALUES ('6', 'Λοιπά Αγαθά 4%', 4 1, 1);
+INSERT INTO llx_c_mydata_vatexceptions (code, description, tax, tax_type, active) VALUES ('7', 'Παροχή Υπηρεσιών 8%', 8, 1, 1);
+INSERT INTO llx_c_mydata_vatexceptions (code, description, tax, tax_type, active) VALUES ('8', 'Προκαταβλητέος Φόρος Αρχιτεκτόνων και Μηχανικών επί Συμβατικών Αμοιβών, για Εκπόνηση Μελετών και Σχεδίων 4%', 4, 1, 1);
+INSERT INTO llx_c_mydata_vatexceptions (code, description, tax, tax_type, active) VALUES ('9', 'Προκαταβλητέος Φόρος Αρχιτεκτόνων και Μηχανικών επί Συμβατικών Αμοιβών, που αφορούν οποιασδήποτε άλλης φύσης έργα 10%', 10 1, 1);
+INSERT INTO llx_c_mydata_vatexceptions (code, description, tax, tax_type, active) VALUES ('10, 'Προκαταβλητέος Φόρος στις Αμοιβές Δικηγόρων 15%', 15, 1, 1);
+INSERT INTO llx_c_mydata_vatexceptions (code, description, tax, tax_type, active) VALUES ('11, 'Παρακράτηση Φόρου Μισθωτών Υπηρεσιών παρ. 1 αρ. 15 ν. 4172/2013', 0, 2, 1);
+INSERT INTO llx_c_mydata_vatexceptions (code, description, tax, tax_type, active) VALUES ('12, 'Παρακράτηση Φόρου Μισθωτών Υπηρεσιών παρ. 2 αρ. 15 ν. 4172/2013-Αξιωματικών Εμπορικού Ναυτικού', 15, 1, 1);
+INSERT INTO llx_c_mydata_vatexceptions (code, description, tax, tax_type, active) VALUES ('13, 'Παρακράτηση Φόρου Μισθωτών Υπηρεσιών παρ. 2 αρ. 15 ν. 4172/2013-Κατώτερο Πλήρωμα Εμπορικού Ναυτικού', 10 1, 1);
+INSERT INTO llx_c_mydata_vatexceptions (code, description, tax, tax_type, active) VALUES ('14, 'Παρακράτηση Ειδικής Εισφοράς Αλληλεγγύης', 0, 2, 1);
+INSERT INTO llx_c_mydata_vatexceptions (code, description, tax, tax_type, active) VALUES ('15, 'Παρακράτηση Φόρου Αποζημίωσης λόγω Διακοπής Σχέσης Εργασίας παρ. 3 αρ. 15 ν. 4172/2013', 0, 2, 1);
+
