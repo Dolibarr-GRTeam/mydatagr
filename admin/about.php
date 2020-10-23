@@ -75,7 +75,7 @@ $linkback = '<a href="'.($backtopage?$backtopage:DOL_URL_ROOT.'/admin/modules.ph
 print load_fiche_titre($langs->trans($page_name), $linkback, 'setup');
 
 // Configuration header
-$head = mymoduleAdminPrepareHead();
+$head = mydata_modulesetup_prepare_head();
 dol_fiche_head($head, 'about', '', 0, 'mydata_module@mydata_module');
 
 // About page goes here
