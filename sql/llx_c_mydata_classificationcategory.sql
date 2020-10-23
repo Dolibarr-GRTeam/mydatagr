@@ -17,12 +17,11 @@
 --
 -- ========================================================================
 
-create table llx_c_mydata_classificationcategory
-(
-  rowid       integer AUTO_INCREMENT PRIMARY KEY,
-  code varchar(16) NOT NULL,
-  description varchar(255) NOT NULL,
-  active varchar(16) NOT NULL,
-  income varchar(16) NOT NULL
-)ENGINE=innodb; --
-
+CREATE TABLE `llx_c_mydata_classificationcategory` (
+  `rowid` integer NOT NULL AUTO_INCREMENT,
+  `code` varchar(32) NOT NULL,
+  `description` varchar(128) NOT NULL,
+  `active` integer NOT NULL DEFAULT '1',
+  `income` integer DEFAULT NULL,
+  PRIMARY KEY (`rowid`)
+) ENGINE=InnoDB;
