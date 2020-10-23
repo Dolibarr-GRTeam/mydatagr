@@ -83,6 +83,8 @@ echo $langs->trans("AboutPage");
 
 print '<br>';
 
+print '<img src="'.dol_buildpath('/mydata_module/img/logo_gr_team.jpeg',1).'"/>';
+print '&nbsp;&nbsp;&nbsp;&nbsp';
 print '<img src="'.dol_buildpath('/mydata_module/img/mydata_logo.png',1).'"/>';
 
 $buffer = file_get_contents(dol_buildpath('/mydata_module/admin/README.md',0));
