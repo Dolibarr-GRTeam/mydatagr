@@ -1,6 +1,7 @@
 -- ========================================================================
 -- Copyright (C) 2020 George Kourtis 
 -- Copyright (C) 2020 Nikos Drosis <ndrosis@sysaid.gr>
+-- Copyright (C) 2020 Dimitris Kalivis <dkalivis@technoex.gr>
 --
 -- This program is free software; you can redistribute it and/or modify
 -- it under the terms of the GNU General Public License as published by
@@ -17,13 +18,12 @@
 --
 -- ========================================================================
 
-create table llx_c_mydata_type
-(
-  rowid       integer AUTO_INCREMENT PRIMARY KEY,
-  code varchar(16) NOT NULL,
-  description varchar(255) NOT NULL,
-  active varchar(16) NOT NULL,
-  type0 varchar(16) NOT NULL,
-  issuer varchar(16) NOT NULL
-)ENGINE=innodb; --
-
+CREATE TABLE `llx_c_mydata_type` (
+  `rowid` integer NOT NULL AUTO_INCREMENT,
+  `code` varchar(32) NOT NULL,
+  `description` varchar(128) NOT NULL,
+  `active` smallint NOT NULL DEFAULT '1',
+  `type0_rowid` integer DEFAULT NULL,
+  `issuer` integer DEFAULT NULL,
+  PRIMARY KEY (`rowid`)
+) ENGINE=InnoDB;
