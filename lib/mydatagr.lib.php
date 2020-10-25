@@ -23,25 +23,25 @@
 
 
 
-function mydata_modulesetup_prepare_head()
+function mydatagrsetup_prepare_head()
 {
 	global $langs, $conf;
 	
-	$langs->load("mydata_module@mydata_module");
+	$langs->load("mydatagr@mydatagr");
 
 	$h = 0;
 	$head = array();
 
-	$head[$h][0] = dol_buildpath("/mydata_module/admin/setup.php",1);
+	$head[$h][0] = dol_buildpath("/mydatagr/admin/setup.php",1);
 	$head[$h][1] = $langs->trans("Settings");
 	$head[$h][2] = 'settings';
 	$h++;
-	$head[$h][0] = dol_buildpath("/mydata_module/admin/about.php",1);
+	$head[$h][0] = dol_buildpath("/mydatagr/admin/about.php",1);
 	$head[$h][1] = $langs->trans("About");
 	$head[$h][2] = 'about';
 	$h++;
 
-	complete_head_from_modules($conf,$langs,$object,$head,$h,'mydata_module');
+	complete_head_from_modules($conf,$langs,$object,$head,$h,'mydatagr');
 
 	return $head;
 }
