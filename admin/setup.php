@@ -16,8 +16,8 @@
  */
 
 /**
- * 	\file		admin/mydata_module.php
- * 	\ingroup	mydata_module
+ * 	\file		admin/mydatagr.php
+ * 	\ingroup	mydatagr
  * 	\brief		Setup mydata module
  */
 
@@ -29,10 +29,10 @@ if ( ! $res)
 	
 // Libraries
 require_once DOL_DOCUMENT_ROOT . "/core/lib/admin.lib.php";
-dol_include_once('/mydata_module/lib/mydata_module.lib.php');
+dol_include_once('/mydatagr/lib/mydatagr.lib.php');
 
 // Translations
-$langs->load("mydata_module@mydata_module");
+$langs->load("mydatagr@mydatagr");
 $error=0;
 
 // Access control
@@ -54,9 +54,9 @@ $linkback = '<a href="' . DOL_URL_ROOT . '/admin/modules.php">'
 print_fiche_titre($langs->trans($page_name), $linkback);
 
 // Configuration header
-$head = mydata_modulesetup_prepare_head();
+$head = mydatagrsetup_prepare_head();
 dol_fiche_head($head, 'settings', $langs->trans("ModulemydataName"), 0,
-	"mydata_module@mydata_module");
+	"mydatagr@mydatagr");
 
 
 print '<table class="noborder" width="100%">';
