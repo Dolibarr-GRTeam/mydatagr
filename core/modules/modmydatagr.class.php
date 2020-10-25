@@ -77,7 +77,7 @@ class modmydatagr extends DolibarrModules
         $this->dictionnaries=array(
             'langs'=>'mydatagr@mydatagr',
             'tabname'=>array(MAIN_DB_PREFIX."c_mydata_type"),
-            'tablib'=>array("AboutPage"),
+            'tablib'=>array("MydataTtype"),
             'tabsql'=>array('SELECT f.rowid, f.code, f.description, f.type0_rowid, f.issuer, f.active FROM '.MAIN_DB_PREFIX.'c_mydata_type as f'),
             'tabsqlsort'=>array("code ASC, description ASC"),
             'tabfield'=>array("code,description"),
