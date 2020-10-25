@@ -272,3 +272,45 @@ INSERT INTO llx_c_mydata_othertaxespercentcategory (code, description, tax, tax_
 INSERT INTO llx_c_mydata_othertaxespercentcategory (code, description, tax, tax_type, active) VALUES ('13', '3.2 Φόρος πολυτελείας 10% επί της τιμής πώλησης προ Φ.Π.Α. για τα εγχωρίως παραγόμενα είδη 10%', 10, 1, 1);
 INSERT INTO llx_c_mydata_othertaxespercentcategory (code, description, tax, tax_type, active) VALUES ('14', 'Δικαίωμα του Δημοσίου στα εισιτήρια των καζίνο (80% επί του εισιτηρίου)', 80, 2, 1);
 
+-- Insert data mydata_stampdutypercentcategory
+INSERT INTO `llx_c_stampdutypercentcategory` (code, description, stamp, active) VALUES ('1', 'Συντελεστής 1,2 %', '1.20', '1');
+INSERT INTO `llx_c_stampdutypercentcategory` (code, description, stamp, active) VALUES ('2', 'Συντελεστής 2,4 %', '2.40', '1');
+INSERT INTO `llx_c_stampdutypercentcategory` (code, description, stamp, active) VALUES ('3', 'Συντελεστής 3,6 %', '3.60', '1');
+
+-- Insert data mydata_feespercentcategory
+INSERT INTO `llx_c_mydata_feespercentcategory` (code, description, fee, fee_type, active) VALUES ('1', 'Για μηνιαίο λογαριασμό μέχρι και 50 ευρώ 12%', '12.00', '1', '1');
+INSERT INTO `llx_c_mydata_feespercentcategory` (code, description, fee, fee_type, active) VALUES ('2', 'Για μηνιαίο λογαριασμό από 50,01 μέχρι και 100 ευρώ 15%', '15.00', '1', '1');
+INSERT INTO `llx_c_mydata_feespercentcategory` (code, description, fee, fee_type, active) VALUES ('3', 'Για μηνιαίο λογαριασμό από 100,01 μέχρι και 150 ευρώ 18%', '18.00', '1', '1');
+INSERT INTO `llx_c_mydata_feespercentcategory` (code, description, fee, fee_type, active) VALUES ('4', 'Για μηνιαίο λογαριασμό από 150,01 ευρώ και άνω 20%', '20.00', '1', '1');
+INSERT INTO `llx_c_mydata_feespercentcategory` (code, description, fee, fee_type, active) VALUES ('5', 'Τέλος καρτοκινητής επί της αξίας του χρόνου ομιλίας (12%)', '12.00', '1', '1');
+INSERT INTO `llx_c_mydata_feespercentcategory` (code, description, fee, fee_type, active) VALUES ('6', 'Τέλος στη συνδρομητική τηλεόραση 10%', '10.00', '1', '1');
+INSERT INTO `llx_c_mydata_feespercentcategory` (code, description, fee, fee_type, active) VALUES ('7', 'Τέλος συνδρομητών σταθερής τηλεφωνίας 5%', '5.00', '1', '1');
+INSERT INTO `llx_c_mydata_feespercentcategory` (code, description, fee, fee_type, active) VALUES ('8', 'Περιβαλλοντικό Τέλος & πλαστικής σακούλας ν. 2339/2001 αρ. 6α 0,07 ευρώ ανά τεμάχιο', '0.07', '2', '1');
+INSERT INTO `llx_c_mydata_feespercentcategory` (code, description, fee, fee_type, active) VALUES ('9', 'Εισφορά δακοκτονίας 2%', '2.00', '1', '1');
+
+-- Insert data mydata_paymentmethods
+INSERT INTO `llx_c_mydata_paymentmethods` (code, description, active) VALUES ('1', 'Επαγ. Λογαριασμός Πληρωμών Ημεδαπής', '1');
+INSERT INTO `llx_c_mydata_paymentmethods` (code, description, active) VALUES ('2', 'Επαγ. Λογαριασμός Πληρωμών Αλλοδαπής', '1');
+INSERT INTO `llx_c_mydata_paymentmethods` (code, description, active) VALUES ('3', 'Μετρητά', '1');
+INSERT INTO `llx_c_mydata_paymentmethods` (code, description, active) VALUES ('4', 'Επιταγή', '1');
+INSERT INTO `llx_c_mydata_paymentmethods` (code, description, active) VALUES ('5', 'Επί Πιστώσει', '1');
+
+-- Insert data mydata_measurementunit
+INSERT INTO `llx_c_mydata_measurementunit` (code, description, active) VALUES ('1', 'Τεμάχια', '1');
+INSERT INTO `llx_c_mydata_measurementunit` (code, description, active) VALUES ('2', 'Κιλά', '1');
+INSERT INTO `llx_c_mydata_measurementunit` (code, description, active) VALUES ('3', 'Λίτρα', '1');
+
+-- Insert data mydata_movepurpose
+INSERT INTO `llx_c_mydata_movepurpose` (code, description, active) VALUES ('1', 'Πώληση', '1');
+INSERT INTO `llx_c_mydata_movepurpose` (code, description, active) VALUES ('2', 'Πώληση για Λογαριασμό Τρίτων', '1');
+INSERT INTO `llx_c_mydata_movepurpose` (code, description, active) VALUES ('3', 'Δειγματισμός', '1');
+INSERT INTO `llx_c_mydata_movepurpose` (code, description, active) VALUES ('4', 'Έκθεση', '1');
+INSERT INTO `llx_c_mydata_movepurpose` (code, description, active) VALUES ('5', 'Επιστροφή', '1');
+INSERT INTO `llx_c_mydata_movepurpose` (code, description, active) VALUES ('6', 'Φύλαξη', '1');
+INSERT INTO `llx_c_mydata_movepurpose` (code, description, active) VALUES ('7', 'Επεξεργασία Συναρμολόγηση', '1');
+INSERT INTO `llx_c_mydata_movepurpose` (code, description, active) VALUES ('8', 'Μεταξύ Εγκαταστάσεων Οντότητας', '1');
+
+-- Insert data mydata_invoicedetailtype
+INSERT INTO `llx_c_mydata_invoicedetailtype` (code, description, active) VALUES ('1', 'Εκκαθάριση Πωλήσεων Τρίτων', '1');
+INSERT INTO `llx_c_mydata_invoicedetailtype` (code, description, active) VALUES ('2', 'Αμοιβή από Πωλήσεις Τρίτων', '1');
+
