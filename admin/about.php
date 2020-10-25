@@ -17,9 +17,9 @@
  */
 
 /**
- * \file    htdocs/mydata_module/admin/about.php
- * \ingroup mydata_module
- * \brief   About page of module mydata_module.
+ * \file    htdocs/mydatagr/admin/about.php
+ * \ingroup mydatagr
+ * \brief   About page of module mydatagr.
  */
 
 // Load Dolibarr environment
@@ -39,11 +39,11 @@ if (! $res) die("Include of main fails");
 // Libraries
 require_once DOL_DOCUMENT_ROOT.'/core/lib/admin.lib.php';
 require_once DOL_DOCUMENT_ROOT.'/core/lib/functions2.lib.php';
-require_once '../lib/mydata_module.lib.php';
+require_once '../lib/mydatagr.lib.php';
 require '../lib/PHP_Markdown/markdown.php';
 
 // Translations
-$langs->loadLangs(array("errors","admin","mydata_module@mydata_module"));
+$langs->loadLangs(array("errors","admin","mydatagr@mydatagr"));
 
 // Access control
 if (! $user->admin) accessforbidden();
@@ -75,29 +75,29 @@ $linkback = '<a href="'.($backtopage?$backtopage:DOL_URL_ROOT.'/admin/modules.ph
 print load_fiche_titre($langs->trans($page_name), $linkback, 'setup');
 
 // Configuration header
-$head = mydata_modulesetup_prepare_head();
-dol_fiche_head($head, 'about', '', 0, 'mydata_module@mydata_module');
+$head = mydatagrsetup_prepare_head();
+dol_fiche_head($head, 'about', '', 0, 'mydatagr@mydatagr');
 
 // About page goes here
 echo $langs->trans("AboutPage");
 
 print '<br>';
 
-print '<img src="'.dol_buildpath('/mydata_module/img/logo_gr_team.jpeg',1).'"/>';
+print '<img src="'.dol_buildpath('/mydatagr/img/logo_gr_team.jpeg',1).'"/>';
 print '&nbsp;&nbsp;&nbsp;&nbsp';
-print '<img src="'.dol_buildpath('/mydata_module/img/mydata_logo.png',1).'"/>';
+print '<img src="'.dol_buildpath('/mydatagr/img/mydata_logo.png',1).'"/>';
 
-$buffer = file_get_contents(dol_buildpath('/mydata_module/admin/README.md',0));
+$buffer = file_get_contents(dol_buildpath('/mydatagr/admin/README.md',0));
 print Markdown($buffer);
 
 print '<br>';
 
-print '<a href="'.dol_buildpath('/mydata_module/admin/COPYING',1).'">';
-print '<img src="'.dol_buildpath('/mydata_module/img/gplv3.png',1).'"/>';
+print '<a href="'.dol_buildpath('/mydatamgr/admin/COPYING',1).'">';
+print '<img src="'.dol_buildpath('/mydatagr/img/gplv3.png',1).'"/>';
 print '</a>';
 
-dol_include_once('/mydata_module/core/modules/modmydata_module.class.php');
-$tmpmodule = new modmydata_module($db);
+dol_include_once('/mydatagr/core/modules/modmydatagr.class.php');
+$tmpmodule = new modmydatagr($db);
 print $tmpmodule->getDescLong();
 
 // Page end
