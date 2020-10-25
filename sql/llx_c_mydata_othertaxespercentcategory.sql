@@ -27,3 +27,5 @@ CREATE TABLE `llx_c_mydata_othertaxespercentcategory` (
   `active` tinyint NOT NULL DEFAULT '1',
   PRIMARY KEY (`rowid`)
 ) ENGINE=InnoDB;
+
+-- tax_type takes 1 for percent or 2 for ammount
