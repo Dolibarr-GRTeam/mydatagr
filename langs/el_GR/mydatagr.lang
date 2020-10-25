@@ -23,5 +23,4 @@ AboutPage = Πληροφορίες για το Mydata
 
 
 # Mydata
-Test = ΑΑΔΕ
-mydata_module = Σελίδα διαμόρφωσης Mydata
+MydataTtype = Τύποι MyData
