@@ -19,7 +19,7 @@
 /**
  * 	\defgroup	mydata	mydata module
  * 	\brief		mydata module descriptor.
- * 	\file		core/modules/modmydata_module.class.php
+ * 	\file		core/modules/modmydatagr.class.php
  * 	\ingroup	mydata
  * 	\brief		Description and activation file for module mydata
   */
@@ -30,7 +30,7 @@
   /**
  * Description and activation class for module numberseries
  */
-class modmydata_module extends DolibarrModules
+class modmydatagr extends DolibarrModules
  {
 
 	/**
@@ -38,7 +38,7 @@ class modmydata_module extends DolibarrModules
 	 *
 	 *   @param		DoliDB		$db		Database handler
 	 */
-	function modmydata_module($db)
+	function modmydatagr($db)
 	{
         global $langs,$conf;
 
@@ -61,17 +61,31 @@ class modmydata_module extends DolibarrModules
 
 		// Dependances
 		$this->depends = array();
-		$this->langfiles = array('mydata_module@mydata_module');
+		$this->langfiles = array('mydatagr@mydatagr');
 
 		// Config pages
-        $this->config_page_url = array("setup.php@mydata_module");
+        $this->config_page_url = array("setup.php@mydatagr");
 
         // Constants
         // List of particular constants to add when module is enabled (key, 'chaine', value, desc, visible, 'current' or 'allentities', deleteonunactive)
         // Example: $this->const=array(0=>array('MYMODULE_MYNEWCONST1','chaine','myvalue','This is a constant to add',1),
         //                             1=>array('MYMODULE_MYNEWCONST2','chaine','myvalue','This is another constant to add',0) );
         //                             2=>array('MAIN_MODULE_MYMODULE_NEEDSMARTY','chaine',1,'Constant to say module need smarty',1)
-		$this->const = array(0=>array('MAIN_USE_MYDATA_DICTIONNARY','chaine','1','Constant to enable usage of mydata tables',0,'current',1));
+		$this->const = array(0=>array('MAIN_USE_MYDATA_DICTIONNARY','chaine','1','Constant to enable usage of MyData table',0,'current',1));
+
+        // Dictionnaries
+        $this->dictionnaries=array(
+            'langs'=>'mydatagr@mydatagr',
+            'tabname'=>array(MAIN_DB_PREFIX."c_mydata_type"),
+            'tablib'=>array("AboutPage"),
+            'tabsql'=>array('SELECT f.rowid, f.code, f.description, f.type0_rowid, f.issuer, f.active FROM '.MAIN_DB_PREFIX.'c_mydata_type as f'),
+            'tabsqlsort'=>array("code ASC, description ASC"),
+            'tabfield'=>array("code,description"),
+            'tabfieldvalue'=>array("code,description"),
+            'tabfieldinsert'=>array("code,description"),
+            'tabrowid'=>array(),
+            'tabcond'=>array(empty($conf->mydatagr->enabled)?0:$conf->mydatagr->enabled)
+        );
 
         // Boxes
 		$this->boxes = array();
@@ -126,7 +140,7 @@ class modmydata_module extends DolibarrModules
 	 */
 	function load_tables()
 	{
-		return $this->_load_tables('/mydata_module/sql/');
+		return $this->_load_tables('/mydatagr/sql/');
 	}
 }
 ?>
