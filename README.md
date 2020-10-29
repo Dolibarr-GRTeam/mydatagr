@@ -1,22 +1,14 @@
 # Mydata module for Dolibarr
 ***
 ### Version Information:
-* Module name --> Mydata?
+* Module name --> mydatagr
 * Prerequisites --> Dolibarr min version 12.0
-* TODO
-
+* Current version --> 1.0.0 Beta
+* Last updated --> 25/10/2020
 ***
 ### Featuring:
-1. Update Dolibarr tables. (TODO)
-2. Update Dolibarr Invoice classes & forms (TODO)
-    1. Adds classification field used for submission to MyDATA
-    2. Adds extra fields where needed
-***
-### Management Interface:
-* TODO
-***
-### Future updates / addons:
-* TODO
+1. Adds classification field used for submission to MyDATA
+2. Adds extra fields where needed
 
 ***
 ### Install module:
