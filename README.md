@@ -1,10 +1,10 @@
 # Mydata module for Dolibarr
 ***
 ### Version Information:
-* Module name --> mydatagr
-* Prerequisites --> Dolibarr min version 12.0
-* Current version --> 1.0.0 Beta
-* Last updated --> 25/10/2020
+* Name: mydatagr
+* Prerequisites: Dolibarr version 12.x+
+* Current version: 1.0.0 Beta
+* Last updated: 25/10/2020
 ***
 ### Featuring:
 1. Adds classification field used for submission to MyDATA
