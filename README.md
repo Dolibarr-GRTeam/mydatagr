@@ -3,7 +3,7 @@
 ### Version Information:
 * Name: mydatagr
 * Prerequisites: Dolibarr version 12.x+
-* Current version: 1.0.0 Beta
+* Current version: 1.0.0 Dev
 * Last updated: 25/10/2020
 ***
 ### Featuring:

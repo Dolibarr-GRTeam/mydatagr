@@ -51,7 +51,7 @@ class modmydatagr extends DolibarrModules
 		$this->description = "Add mydata into database (Greece)";
 
 		// Possible values for version are: 'development', 'experimental', 'dolibarr' or version
-		$this->version = '1.0.0 Beta';
+		$this->version = '1.0.0 Dev';
 		$this->const_name = 'MAIN_MODULE_'.strtoupper($this->name);
 		$this->special = 2;
 		$this->picto='bill';
